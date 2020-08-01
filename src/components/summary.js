@@ -31,8 +31,12 @@ class Summary extends Component {
         return (
           <div>
               <h2> Meeting Summarizer </h2>
-             <form onSubmit={this.renderVideo}>
+              <form onSubmit={this.renderVideo}>
                 <input type="text" placeholder="Upload Video / Paste Video Link" value={this.state.value} onChange={this.handleChange} />
+                <input type="submit" value="Submit" />
+            </form>
+            <form>
+                <input type="file"  value='' onChange='' />
                 <input type="submit" value="Submit" />
             </form>
              <div id="video-block">
